@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"> </script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="imagem/unlock.png" alt="cadeado">
+    <h1> Gerador de senhas</h1>
+    <p>Gere instantaneamente uma senha aleatória e segura</p>
+
+    <div class="password-container">
+      <!-- campo de senha somente leitura-->
+      <input id="passwordField" placeholder="senha" readonly>
+      <!-- Botão de copiar com imagem -->
+      <button onclick="copyPassword()" class="copy-btn">
+        <img src="imagem/copy.png" alt="Copiar senha" />
+      </button>
+      <!-- Botão de gerar nova senha-->
+      <button onclick="generatePassword()" class="generate-btn">
+        <img src="imagem/refresh-cw.png" alt="Gerar nova senha" />
+      </button>
+    </div>
+
+    <div class="settings">
+      <!-- controle de caracteres -->
+      <h2>Personalize sua senha</h2>
+      <label for="length">Número de caracteres</label>
+      <input type="range" id="length" min="4" max="20" oninput="updateLengthLabel(this.value)">
+      <span id="lengthLabel"></span>
+
+      <!-- checkbox-->
+      <div class="options">
+        <label><input type="checkbox" id="uppercase">Letras maiúsculas</label>
+        <label><input type="checkbox" id="lowercase" checked>Letras minúsculas</label>
+        <label><input type="checkbox" id="numbers">Números</label>
+        <label><input type="checkbox" id="symbols">Símbolos</label>
+      </div>
+
+      <!--força da senha-->
+      <h3>Força da senha</h3>
+      <div class="strength-meter">
+        <div id="strengthBar"></div>
+        <span id="strengthText"></span>
+      </div>
+    </div>
+
+    <!--botão de copiar senha-->
+    <button onclick="copyPassword()" class="copy-btn">Copiar senha</button>
+  </div>
+
+</body>
+
+</html>
