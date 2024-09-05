@@ -83,6 +83,6 @@ O projeto é totalmente responsivo, adaptando-se a diferentes tamanhos de tela, 
 
 ## Contato
 
-Seu Nome - isabella.mmarquest@gmail.com
+Contato - isabella.mmarquest@gmail.com
 
 Link do Projeto: https://isammt.github.io/gerador-senhas/
