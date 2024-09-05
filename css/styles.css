@@ -15,12 +15,7 @@ body {
   padding: 2rem;
   width: 90%;
   max-width: 400px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 p {
@@ -86,7 +81,6 @@ p {
 }
 
 .strength-meter {
-  height: 10px;
   background-color: #321153;
   margin-top: 0.5rem;
   border-radius: 5px;
