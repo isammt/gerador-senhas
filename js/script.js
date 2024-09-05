@@ -2,7 +2,7 @@
 function generatePassword() {
   const length = document.getElementById('length').value; // Obtém o valor do campo de entrada onde o usuário especifica o comprimento desejado para a senha
   const includeLowercase = document.getElementById('lowercase').checked; //Verifica se o checkbox para letras minúsculas está marcado.
-  const includeUppercase = document.getElementById('uppercase').checked; //  Verifica se o checkbox para letras maiúsculas está marcado.
+  const includeUppercase = document.getElementById('uppercase').checked; // Verifica se o checkbox para letras maiúsculas está marcado.
   const includeNumbers = document.getElementById('numbers').checked; // Verifica se o checkbox para números está marcado.
   const includeSymbols = document.getElementById('symbols').checked; // Verifica se o checkbox para símbolos está marcado.
 
@@ -37,7 +37,6 @@ function evaluatePasswordStrength() {
   let strengthColor = 'red';
 
   //Se for selecionado apenas duas opções 
-  // esperar retorno do guarni sobre as 4 opções
   if ((includeLowercase && includeUppercase && (includeNumbers || includeSymbols))) {
     strengthText = 'Média';
     strengthColor = 'yellow';
